@@ -8,7 +8,7 @@ const initialTextAreaHeight = textarea.scrollHeight
 
 async function createBotReply(content) {
   const API_URL = "https://api.openai.com/v1/chat/completions"
-  const API_KEY = "sk-proj-8rtaRQJU6R967E6ykGQnT3BlbkFJlzczsuVhrdGF4LVnHpYw"
+  const API_KEY = ""
 
   const response = await fetch(API_URL, {
     method: "POST",
