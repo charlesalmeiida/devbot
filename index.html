@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/484d6eb132.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>DevBot</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <i class="fa-regular fa-message fa-lg"></i>
+          <h1>DevBot</h1>
+        </div>
+        <button class="close"><i class="fa-solid fa-xmark fa-xl"></i></button>
+      </header>
+
+      <main>
+        <ul>
+          <li class="message bot">
+            <i class="fa-solid fa-robot fa-xl"></i>
+            <p>
+              Olá. sou o <strong>DevBot</strong>👋 <br />
+              Como posso te ajudar?
+            </p>
+          </li>
+        </ul>
+      </main>
+
+      <footer>
+        <textarea
+          placeholder="Insira uma mensagem"
+          required
+          rows="1"
+          onkeydown="handleChatOnKeyDown(event)"
+          oninput="handleAutoSize"
+        ></textarea>
+        <button class="send-message">
+          <i class="fa-regular fa-paper-plane"></i>
+        </button>
+      </footer>
+    </div>
+
+    <button class="toggler">
+      <i class="fa-regular fa-message fa-lg"></i>
+      <i class="fa-solid fa-xmark fa-xl"></i>
+    </button>
+    <script src="scripts.js"></script>
+  </body>
+</html>
